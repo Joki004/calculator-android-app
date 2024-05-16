@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="font_size">33sp</dimen>
+    <dimen name="Title">50sp</dimen>
+    <dimen name="buttonSizePortrait">11sp</dimen>
+    <dimen name="buttonSizeLandscape">15sp</dimen>
+
+</resources>

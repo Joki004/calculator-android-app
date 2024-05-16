@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ConstraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+
+    <!-- Display for Equation -->
+    <TextView
+        android:id="@+id/equation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="end"
+
+        android:textAlignment="textEnd"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@id/textViewResult"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/textViewResult"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+
+        android:gravity="end"
+        android:padding="10dp"
+
+        android:textAlignment="textEnd"
+          android:textSize="@dimen/buttonSizePortrait"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/guideline"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/equation"
+
+
+        />
+
+    <Button
+        android:id="@+id/backSpace"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="2dp"
+        android:background="@drawable/rectangle_button"
+        android:elevation="2dp"
+        android:gravity="center"
+        android:minWidth="55dp"
+        android:minHeight="55dp"
+
+        android:text="@string/allClear"
+        android:textSize="@dimen/buttonSizePortrait"
+        app:layout_constraintBottom_toTopOf="@id/NumberSeven"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/EnterClear"
+        app:layout_constraintTop_toBottomOf="@+id/guideline"
+
+        />
+
+    <!-- Clear/Enter Clear Button -->
+   
+
+    <Button
+        android:id="@+id/EnterClear"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="2dp"
+        android:background="@drawable/rectangle_button"
+        android:gravity="center"
+        android:minWidth="55dp"
+        android:minHeight="55dp"
+        android:text="@string/c"
+        android:textSize="@dimen/buttonSizePortrait"
+        app:layout_constraintBottom_toTopOf="@id/NumberEight"
+        app:layout_constraintLeft_toRightOf="@id/backSpace"
+        app:layout_constraintRight_toLeftOf="@+id/NumberSign"
+        app:layout_constraintTop_toBottomOf="@id/guideline" />
+
+
+    <!-- Number Sign / Plus-Minus Button -->
+    <Button
+        android:id="@+id/NumberSign"
+        style="@style/NoTintButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="2dp"
+        android:background="@drawable/rectangle_button_purple"
+        android:elevation="2dp"
+        android:gravity="center"
+        android:minWidth="55dp"
+        android:minHeight="55dp"
+
+        android:text="@string/plus_minus"
+        android:textSize="@dimen/buttonSizePortrait"
+        app:layout_constraintBottom_toTopOf="@id/DivideOperator"
+
+        app:layout_constraintLeft_toRightOf="@id/EnterClear"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guideline" />
+    <!-- First Line -->
+    <!-- Number 7 Button -->
+    <Button
+        android:id="@+id/NumberSeven"
+        style="@style/NoTintButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="2dp"
+        android:background="@drawable/rectangle_button_gray"
+
+        android:elevation="2dp"
+        android:gravity="center"
+        android:minWidth="55dp"
+        android:minHeight="55dp"
+
+        android:text="@string/_7"
+          android:textSize="@dimen/buttonSizePortrait"
+        app:layout_constraintBottom_toTopOf="@+id/NumberFour"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/NumberEight"
+        app:layout_constraintTop_toBottomOf="@+id/backSpace"
+
+        />
+
+    <!-- Number 8 Button -->
+    <Button
+        android:id="@+id/NumberEight"
+        style="@style/NoTintButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="2dp"
+        android:background="@drawable/rectangle_button_gray"
+        android:elevation="2dp"
+        android:gravity="center"
+        android:minWidth="55dp"
+        android:minHeight="55dp"
+
+        android:text="@string/_8"
+          android:textSize="@dimen/buttonSizePortrait"
+        app:layout_constraintBottom_toTopOf="@+id/NumberFive"
+
+        app:layout_constraintLeft_toRightOf="@id/NumberSeven"
+        app:layout_constraintRight_toLeftOf="@id/NumberNine"
+        app:layout_constraintTop_toBottomOf="@+id/EnterClear" />
+
+    <!-- Number 9 Button -->
+    <Button
+        android:id="@+id/NumberNine"
+        style="@style/NoTintButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="2dp"
+        android:background="@drawable/rectangle_button_gray"
+        android:elevation="2dp"
+        android:gravity="center"
+        android:minWidth="55dp"
+        android:minHeight="55dp"
+
+        android:text="@string/_9"
+          android:textSize="@dimen/buttonSizePortrait"
+        app:layout_constraintBottom_toTopOf="@id/NumberSix"
+
+        app:layout_constraintLeft_toRightOf="@id/NumberEight"
+        app:layout_constraintRight_toLeftOf="@id/DivideOperator"
+        app:layout_constraintTop_toBottomOf="@+id/EnterClear" />
+
+    <!-- Divide Operator Button -->
+
+    <Button
+        android:id="@+id/DivideOperator"
+        style="@style/NoTintButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="2dp"
+        android:background="@drawable/rectangle_button_purple"
+        android:elevation="2dp"
+        android:gravity="center"
+        android:minWidth="55dp"
+        android:minHeight="55dp"
+
+        android:text="@string/division_operator"
+          android:textSize="@dimen/buttonSizePortrait"
+        app:layout_constraintBottom_toTopOf="@id/multiplyOperator"
+
+        app:layout_constraintLeft_toRightOf="@id/NumberNine"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/NumberSign" />
+    <!--Second Line -->
+    <!-- Number 4 Button -->
+
+    <!-- Number 5 Button -->
+    <Button
+        android:id="@+id/NumberFour"
+        style="@style/NoTintButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="2dp"
+        android:background="@drawable/rectangle_button_gray"
+
+        android:elevation="2dp"
+        android:gravity="center"
+        android:minWidth="55dp"
+        android:minHeight="55dp"
+
+        android:text="@string/_4"
+          android:textSize="@dimen/buttonSizePortrait"
+        app:layout_constraintBottom_toTopOf="@id/NumberOne"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/NumberFive"
+        app:layout_constraintTop_toBottomOf="@id/NumberSeven"
+
+        />
+
+    <Button
+        android:id="@+id/NumberFive"
+        style="@style/NoTintButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="2dp"
+        android:background="@drawable/rectangle_button_gray"
+        android:elevation="2dp"
+        android:gravity="center"
+        android:minWidth="55dp"
+        android:minHeight="55dp"
+
+        android:text="@string/_5"
+          android:textSize="@dimen/buttonSizePortrait"
+        app:layout_constraintBottom_toTopOf="@id/NumberTwo"
+
+        app:layout_constraintLeft_toRightOf="@id/NumberFour"
+        app:layout_constraintRight_toLeftOf="@id/NumberSix"
+        app:layout_constraintTop_toBottomOf="@+id/NumberEight" />
+
+    <!-- Number 6 Button -->
+    <Button
+        android:id="@+id/NumberSix"
+        style="@style/NoTintButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="2dp"
+        android:background="@drawable/rectangle_button_gray"
+        android:elevation="2dp"
+        android:gravity="center"
+        android:minWidth="55dp"
+        android:minHeight="55dp"
+
+        android:text="@string/_6"
+          android:textSize="@dimen/buttonSizePortrait"
+        app:layout_constraintBottom_toTopOf="@id/NumberThree"
+
+        app:layout_constraintLeft_toRightOf="@id/NumberFive"
+        app:layout_constraintRight_toLeftOf="@id/multiplyOperator"
+        app:layout_constraintTop_toBottomOf="@+id/NumberNine" />
+
+    <!-- Multiply Operator Button -->
+    <Button
+        android:id="@+id/multiplyOperator"
+        style="@style/NoTintButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="2dp"
+        android:background="@drawable/rectangle_button_purple"
+        android:elevation="2dp"
+        android:gravity="center"
+        android:minWidth="55dp"
+        android:minHeight="55dp"
+
+        android:text="@string/multiply_operator"
+          android:textSize="@dimen/buttonSizePortrait"
+        app:layout_constraintBottom_toTopOf="@id/minusOperator"
+
+        app:layout_constraintLeft_toRightOf="@id/NumberSix"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/DivideOperator"
+
+        />
+
+
+    <!--third Line -->
+    <!-- Number 1 Button -->
+    <Button
+        android:id="@+id/NumberOne"
+        style="@style/NoTintButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="2dp"
+        android:background="@drawable/rectangle_button_gray"
+        android:elevation="2dp"
+        android:gravity="center"
+        android:minWidth="55dp"
+        android:minHeight="55dp"
+        android:text="@string/_1"
+          android:textSize="@dimen/buttonSizePortrait"
+        app:layout_constraintBottom_toTopOf="@+id/NumberZero"
+
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/NumberTwo"
+        app:layout_constraintTop_toBottomOf="@id/NumberFour" />
+
+    <!-- Number 2 Button -->
+    <Button
+        android:id="@+id/NumberTwo"
+        style="@style/NoTintButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="2dp"
+        android:background="@drawable/rectangle_button_gray"
+        android:elevation="2dp"
+        android:gravity="center"
+        android:minWidth="55dp"
+        android:minHeight="55dp"
+
+        android:text="@string/_2"
+          android:textSize="@dimen/buttonSizePortrait"
+        app:layout_constraintBottom_toTopOf="@id/DecimalPoint"
+
+
+        app:layout_constraintLeft_toRightOf="@id/NumberOne"
+        app:layout_constraintRight_toLeftOf="@id/NumberThree"
+        app:layout_constraintTop_toBottomOf="@+id/NumberFive" />
+
+    <!-- Number 3 Button -->
+    <Button
+        android:id="@+id/NumberThree"
+        style="@style/NoTintButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="2dp"
+        android:background="@drawable/rectangle_button_gray"
+        android:elevation="2dp"
+        android:gravity="center"
+        android:minWidth="55dp"
+        android:minHeight="55dp"
+
+        android:text="@string/_3"
+          android:textSize="@dimen/buttonSizePortrait"
+        app:layout_constraintBottom_toTopOf="@id/EqualSign"
+
+        app:layout_constraintLeft_toRightOf="@id/NumberTwo"
+        app:layout_constraintRight_toLeftOf="@id/minusOperator"
+        app:layout_constraintTop_toBottomOf="@+id/NumberSix" />
+
+    <!-- minus Operator Button -->
+    <Button
+        android:id="@+id/minusOperator"
+        style="@style/NoTintButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="2dp"
+        android:background="@drawable/rectangle_button_purple"
+        android:elevation="2dp"
+        android:gravity="center"
+        android:minWidth="55dp"
+        android:minHeight="55dp"
+
+        android:text="@string/minusOperator"
+          android:textSize="@dimen/buttonSizePortrait"
+        app:layout_constraintBottom_toTopOf="@id/PlusOperator"
+
+        app:layout_constraintLeft_toRightOf="@id/NumberThree"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/multiplyOperator" />
+
+
+    <!--fourth Line -->
+    <!-- Number 0 Button -->
+
+
+    <Button
+        android:id="@+id/NumberZero"
+        style="@style/NoTintButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="2dp"
+        android:background="@drawable/rectangle_button_gray"
+        android:elevation="2dp"
+        android:gravity="center"
+        android:minWidth="55dp"
+        android:minHeight="55dp"
+
+        android:text="@string/_0"
+          android:textSize="@dimen/buttonSizePortrait"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/DecimalPoint"
+        app:layout_constraintTop_toBottomOf="@id/NumberOne" />
+    <!-- DecimalPoint Button -->
+    <Button
+        android:id="@+id/DecimalPoint"
+        style="@style/NoTintButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="2dp"
+        android:background="@drawable/rectangle_button_gray"
+        android:elevation="2dp"
+        android:gravity="center"
+        android:minWidth="55dp"
+        android:minHeight="55dp"
+
+        android:text="@string/DecimalPoint"
+          android:textSize="@dimen/buttonSizePortrait"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintLeft_toRightOf="@id/NumberZero"
+        app:layout_constraintRight_toLeftOf="@id/EqualSign"
+        app:layout_constraintTop_toBottomOf="@+id/NumberTwo" />
+
+    <!-- EqualSign Button -->
+    <Button
+        android:id="@+id/EqualSign"
+        style="@style/NoTintButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="2dp"
+        android:background="@drawable/rectangle_button_orange"
+        android:elevation="2dp"
+        android:gravity="center"
+        android:minWidth="55dp"
+        android:minHeight="55dp"
+
+        android:text="@string/equalSign"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintLeft_toRightOf="@id/DecimalPoint"
+        app:layout_constraintRight_toLeftOf="@id/PlusOperator"
+        app:layout_constraintTop_toBottomOf="@+id/NumberThree" />
+
+    <!-- plus Operator Button -->
+    <Button
+        android:id="@+id/PlusOperator"
+        style="@style/NoTintButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="2dp"
+        android:background="@drawable/rectangle_button_purple"
+        android:elevation="2dp"
+        android:gravity="center"
+        android:minWidth="55dp"
+        android:minHeight="55dp"
+
+        android:text="@string/PlusOperator"
+          android:textSize="@dimen/buttonSizePortrait"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintLeft_toRightOf="@id/EqualSign"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/minusOperator" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.2" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

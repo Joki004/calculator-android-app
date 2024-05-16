@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">Calculator</string>
+    <string name="my_calculator">My Calculator</string>
+    <string name="simple">Simple</string>
+    <string name="advanced">Advanced</string>
+    <string name="about">About</string>
+    <string name="exit">Exit</string>
+    <string name="result">Result:</string>
+    <string name="ac">AC</string>
+    <string name="c">C</string>
+    <string name="plus_minus">±</string>
+    <string name="_7">7</string>
+    <string name="_8">8</string>
+    <string name="_9">9</string>
+    <string name="division_operator">/</string>
+    <string name="_4">4</string>
+    <string name="_5">5</string>
+    <string name="_6">6</string>
+    <string name="multiply_operator">*</string>
+    <string name="_1">1</string>
+    <string name="_2">2</string>
+    <string name="_3">3</string>
+    <string name="minusOperator">-</string>
+    <string name="_0">0</string>
+    <string name="DecimalPoint">.</string>
+    <string name="equalSign">=</string>
+    <string name="PlusOperator">+</string>
+    <string name="bksp">Bksp</string>
+    <string name="allClear">AC</string>
+    <string name="sin">sin</string>
+    <string name="cos">cos</string>
+    <string name="ln">ln</string>
+    <string name="sqrt">sqrt</string>
+    <string name="x_y">x^y</string>
+    <string name="log">log</string>
+    <string name="tan">tan</string>
+    <string name="x_2">x^2</string>
+    <string name="about_this_app">About this App</string>
+    <string name="calculator">App name : Calculator +</string>
+    <string name="app_description"><![CDATA[
+    Calculator Plus is a versatile tool designed for both basic arithmetic and advanced mathematical operations. It features:<br /><br />
+    - <b>Standard Mode:</b> Essential functions like addition, subtraction, multiplication, division, sign toggle, and clear/reset options.<br />
+    - <b>Advanced Mode:</b> Extended capabilities including trigonometric functions (sin, cos, tan), logarithms (ln, log), square roots, and exponentiation.<br /><br />
+    Responsive design ensuring seamless transition between portrait and landscape modes for ongoing calculations. Calculator Plus ensures data accuracy, offering a reliable and user-friendly calculating experience.
+    ]]></string>
+    <string name="My_name"> Author : Joram Mumb Mulaj Kambaj</string>
+    <string name="ParenthesesLeft">(</string>
+    <string name="ParenthesesRight">)</string>
+
+
+</resources>
